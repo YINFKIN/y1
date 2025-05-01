@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s登录</title>
+    <style>
+        form{
+            margin:auto;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>登录</h1>
+        <form action="/sdlret" method="post">
+            <label for="user">用户</label><input type="text" id="user" name="user"><br>
+            <label for="pwd">密码</label><input type="password" id="pwd" name="pwd"><br>
+            <input type="submit" value="提交" name="submit" id="submit">
+            {% if err!="" %}
+                <label for="" style="color: red;">{{err}}</label>
+            {%endif%}
+        </form>
+    </center>
+    <p align="center">&copy;版权所属：<font style="font-family:'仿宋';color: purple; font-size: 20px;">影归</font>YingKin</p>
+</body>
+</html>
